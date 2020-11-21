@@ -1,0 +1,19 @@
+{
+    "id": "nodebb-plugin-onedrive",
+    "name": "Onedrive Upload Plugin",
+    "description": "A Plugin that uploads images to onedrive",
+    "url": "https://github.com/yurisizuku/nodebb-plugin-onedrive",
+    "main": "./index.js",
+    "staticDirs": {
+        "vimcn": "public"
+    },
+    "hooks": [
+        { "hook": "static:app.load", "method": "init"},
+        { "hook": "filter:admin.header.build", "method": "admin.menu" },
+        { "hook": "filter:uploadImage", "method": "uploadImage", "priority": 6 },
+		{ "hook": "filter:uploadFile", "method": "uploadFile", "priority": 6 }
+    ],
+    "acpScripts": ["./public/src/admin.js"],
+    "templates": "./public/templates",
+    "settingsRoute": "/admin/plugins/onedrive"
+}

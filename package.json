@@ -1,0 +1,34 @@
+{
+  "name": "nodebb-plugin-onedrive",
+  "version": "0.1.0",
+  "description": "A Plugin that uploads images to vim-cn",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yurisizuku/nodebb-plugin-onedrive"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "vimcn"
+  ],
+  "author": "devseed",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "onedrive-api": "^1.0.0",
+    "request": "^2.88.2",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "eslint": "7.6.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-import": "2.21.1"
+  },
+  "nbbpm": {
+    "compatibility": "^1.15.0"
+  }
+}
